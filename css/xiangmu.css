@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,html {
+    height: 100%;
+    /* display: flex; */
+}
+
+@font-face {
+    font-family: MiSans-Bold;
+    /* src: url(/font/MiSans-Bold.ttf); */
+    src: url(https://uubik.github.io/font/MiSans-Bold.ttf);
+}
+
+.title{
+    display: none;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .title{
+        display: block;
+        text-align: center;
+        font-family: MiSans-Bold;
+        font-size: 28px;
+    }
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box img{
+        width: calc(50% - 10px);  
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .title{
+        display: block;
+        text-align: center;
+        font-family: MiSans-Bold;
+        font-size: 28px;
+    }
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box img{
+        width: 100%;  
+    }
+}

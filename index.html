@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小游作品网</title>
+    <link rel="stylesheet" href="https://uubik.github.io/person/css/index.css">
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+</head>
+<body>
+    <div class="one1">
+        <picture>
+            <source media="(min-width: 320px) and (max-width: 768px) and (orientation: landscape)" srcset="./imge/shouye.png">
+            <source media="(min-width: 320px) and (max-width: 768px) and (orientation: portrait)" srcset="./imge/shouye2.png">
+            <source media="(max-width: 320px)" srcset="./imge/shouye2.png">
+            <source media="(min-width: 768px) and (orientation: landscape)" srcset="./imge/shouye.png">
+            <source media="(min-width: 768px) and (orientation: portrait)" srcset="./imge/shouye2.png">
+            <img src="./imge/shouye.png" alt="this is a picture">
+        </picture>
+        <div class="gongneng">
+            <ul>
+                <li id="gongneng1">项目<br>方案</li>
+                <li id="gongneng2">视觉<br>作品</li>
+                <li id="gongneng3">线上<br>电商</li>
+                <li id="gongneng4">创意<br>设计</li>
+            </ul>
+        </div>
+        <div class="xinxi" id="xinxi1">
+            <img src="./imge/geren.png" alt="">
+            <span>基本信息  / 电话：13551974682</span>
+        </div>
+    </div>
+    <script>
+        gongneng1.onclick = function(){
+            window.location.href = 'https://uubik.github.io/person/xiangmu.html';
+            // window.location.href = './xiangmu.html';
+        }
+        gongneng2.onclick = function(){
+            window.location.href = 'https://uubik.github.io/person/shijue.html';
+            // window.location.href = './shijue.html';
+        }
+        gongneng3.onclick = function(){
+            window.location.href = 'https://uubik.github.io/person/dianshang.html';
+            // window.location.href = './dianshang.html';
+        }
+        gongneng4.onclick = function(){
+            window.location.href = 'https://uubik.github.io/person/chuangyi.html';
+            // window.location.href = './chuangyi.html';
+        }
+        xinxi1.onclick = function(){
+            window.location.href = 'https://uubik.github.io/person/person.html';
+            // window.location.href = './person.html';
+        }
+    </script>
+</body>
+</html>
